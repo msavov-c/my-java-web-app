@@ -1,5 +1,5 @@
-# Use Temurin JDK 17 from GitHub Container Registry
-FROM ghcr.io/adoptium/temurin:17-jdk
+# Use Eclipse Temurin JDK 17 from Docker Hub (public, reliable)
+FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
