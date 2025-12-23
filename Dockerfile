@@ -1,5 +1,5 @@
-# Use OpenJDK 17 with Debian Bookworm (stable)
-FROM openjdk:17-jdk-bookworm
+# Use the full OpenJDK 17 image (recommended)
+FROM openjdk:17-jdk
 
 # Set working directory
 WORKDIR /app
