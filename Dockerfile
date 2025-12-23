@@ -1,14 +1,10 @@
-# Use the full OpenJDK 17 image (recommended)
-FROM openjdk:17-jdk
+# Use Temurin JDK 17 from GitHub Container Registry
+FROM ghcr.io/adoptium/temurin:17-jdk
 
-# Set working directory
 WORKDIR /app
 
-# Copy the JAR file into the container
 COPY target/my-java-web-app-1.0.0.jar app.jar
 
-# Expose port 8080
 EXPOSE 8080
 
-# Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
